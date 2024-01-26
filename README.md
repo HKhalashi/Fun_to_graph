@@ -35,10 +35,6 @@ mkdir build && cd build
 ```bash
 cmake ..
 ```
-## Configure the project using CMake:
-```bash
-cmake ..
-```
 ## Compile the project:
 ```bash
 cmake --build .
