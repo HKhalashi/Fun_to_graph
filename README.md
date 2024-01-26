@@ -20,9 +20,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Clone the repository to your local machine:
 
-   ```bash
-   git clone https://github.com/your-username/Fun_to_graph.git
-###Navigate to the project directory:
-```
+```bash
+git clone https://github.com/your-username/Fun_to_graph.git
+## Navigate to the project directory:
+```bash
 cd Fun_to_graph
-```
+## Create a build directory and navigate into it:
+```bash
+mkdir build && cd build
+
