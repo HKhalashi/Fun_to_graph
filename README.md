@@ -52,7 +52,7 @@ x^2
 ```
 ## Output
 
-The application will generate a PDF file named `output.pdf` containing the graph of the specified function.
+The application will generate a PDF file named `temp.pdf` containing the graph of the specified function.
 
 ## Documentation
 
