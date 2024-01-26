@@ -18,7 +18,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-1. Clone the repository to your local machine:
+Clone the repository to your local machine:
 
 ```
 git clone https://github.com/your-username/Fun_to_graph.git
@@ -31,4 +31,37 @@ cd Fun_to_graph
 ```bash
 mkdir build && cd build
 ```
+## Configure the project using CMake:
+```bash
+cmake ..
+Configure the project using CMake:
+```bash
+cmake ..
+```
+## Compile the project:
+```bash
+cmake --build .
+```
+## Running the Application
+To run the application, use the following command from the project root directory:
+
+```bash
+./Fun_to_graph <input_file>
+```
+## Input File Format
+The input file should contain a single line with the mathematical function formatted for LaTeX. For example:
+```latex
+x^2
+```
+## Output
+
+The application will generate a PDF file named `output.pdf` containing the graph of the specified function.
+
+## Documentation
+
+For more details on the project's design and development process, refer to the `documentation.pdf` file included in the repository.
+
+
+
+
 
