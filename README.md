@@ -46,7 +46,7 @@ To run the application, use the following command from the project root director
 ./Fun_to_graph <input_file>
 ```
 ## Input File Format
-The input file should contain a single line with the mathematical function formatted for LaTeX. For example:
+The input file should contain a single line with the mathematical function. For example:
 ```latex
 x^2
 ```
