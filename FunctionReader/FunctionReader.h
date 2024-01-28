@@ -5,14 +5,15 @@
 #include <string>
 #include <fstream>
 #include <stdexcept>
+#include <vector>
 
 class FunctionReader {
 public:
     // Constructor
     FunctionReader(const std::string& filename);
 
-    // Method to read the function from the file
-    std::string readFunction();
+    // Method to read functions from the file
+    std::vector<std::string> readFunctions();
 
 private:
     std::string filename;
@@ -22,4 +23,3 @@ private:
 };
 
 #endif // FUNCTIONREADER_H
-
