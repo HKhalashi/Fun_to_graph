@@ -2,17 +2,20 @@
 #include "../LaTeXGraphGenerator/LaTeXGraphGenerator.h"
 #include <iostream>
 #include <fstream>
+#include <vector>
 
 int main() {
     try {
-        // Example mathematical function
-        std::string function = "x^2"; // Replace this with different functions to test
+        // Example mathematical functions
+        std::vector<std::string> functions = {"sin(x)", "cos(x)", "x^2"}; // Add more functions as needed
 
-        // Create an instance of LaTeXGraphGenerator and generate LaTeX code
-        LaTeXGraphGenerator graphGenerator(function);
+        // Create an instance of LaTeXGraphGenerator with multiple functions
+        LaTeXGraphGenerator graphGenerator(functions);
+
+        // Generate LaTeX code for the graphs
         std::string latexCode = graphGenerator.generateGraphCode();
 
-        // Print the generated LaTeX code (for debugging purposes)
+        // Print the generated LaTeX code
         std::cout << "Generated LaTeX Code:\n" << latexCode << std::endl;
 
         // Create an instance of PDFCreator
@@ -35,3 +38,4 @@ int main() {
 
     return 0;
 }
+
