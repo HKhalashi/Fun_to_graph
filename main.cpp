@@ -3,6 +3,7 @@
 #include "PDFCreator/PDFCreator.h"
 #include <iostream>
 #include <string>
+#include <vector>
 
 int main(int argc, char* argv[]) {
     // Check if a filename is provided
@@ -15,21 +16,21 @@ int main(int argc, char* argv[]) {
     std::string filename = argv[1];
 
     try {
-        // Read the mathematical function from the file
+        // Read the mathematical functions from the file
         FunctionReader functionReader(filename);
-        std::string function = functionReader.readFunction();
+        std::vector<std::string> functions = functionReader.readFunctions();
 
-        // Generate LaTeX code for the function's graph
-        LaTeXGraphGenerator graphGenerator(function);
+        // Generate LaTeX code for each function's graph
+        LaTeXGraphGenerator graphGenerator(functions);
         std::string latexCode = graphGenerator.generateGraphCode();
 
         // Create the PDF from the LaTeX code
         PDFCreator pdfCreator(latexCode);
-        std::string outputFilePath = "./"; // Specify the output directory for PDF
+        std::string outputFilePath = "./"; // Specify the output directory for the PDF
         bool result = pdfCreator.createPDF(outputFilePath);
 
         if (result) {
-            std::cout << "PDF successfully created." << std::endl;
+            std::cout << "PDF successfully created with multiple function graphs." << std::endl;
         } else {
             std::cerr << "Failed to create PDF." << std::endl;
             return 1;
