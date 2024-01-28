@@ -1,0 +1,5 @@
+e^(-x)
+sin(x)
+sinh(x)
+2*x + 3
+log10(x)
